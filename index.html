@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>my_jQuery</title>
+    <script src="./lib/my_jquery.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <figure><img src="https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/4/appacademy.png" alt="AA Logo" /></figure>
+      <nav>
+        <ul>
+          <li><a href="#Description">Description</a></li>
+          <li><a href="#Ingredients">Ingredients</a></li>
+          <li><a href="#Directions">Directions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <aside class="">
+      <h2>Ingredients</h2>
+      <a name="Ingredients"></a>
+
+      <ul class="ingredients-list">
+        <li>Avocado</li>
+        <li>Lime</li>
+        <li>Tomato</li>
+        <li>Onion</li>
+        <li>Salt</li>
+        <li>Olive Oil</li>
+        <li>Coriander</li>
+      </ul>
+    </aside>
+
+    <section>
+      <h1>Guacamole</h1>
+      <figure>
+        <img src="http://162.61.226.249/PicOriginal/P63482612080919_5.jpg"
+             alt="The final dish" />
+       <figcaption>
+         <a href="https://en.wikipedia.org/wiki/Guacamole">Guacamole on Wikipedia</a>
+       </figcaption>
+      </figure>
+
+      <h2>Description</h2>
+      <a name="Description"></a>
+      <p>
+        Guacamole!
+      </p>
+
+      <h2>Directions</h2>
+      <a name="Directions"></a>
+      <ol class="directions">
+        <li>Take out the pulp of the avocados</li>
+        <li>Cut the onions, tomatoes, and coriander in very small pieces</li>
+        <li>Put everything in a bowl.</li>
+        <li>Add salt, lime and olive oil</li>
+        <li>Mix and serve. Maybe chill before eating.</li>
+      </ol>
+    </section>
+
+    <section id="reviews">
+      <h3>Submit a Review</h3>
+      <form id="review-form" action="/reviews" method="post">
+        <label for="name">Reviewer Name</label>
+        <input id="name" type="text" name="name" >
+
+        <label for="rating">Rating</label>
+        <input type="radio" name="rating" value="1" checked=true>
+        <input type="radio" name="rating" value="2">
+        <input type="radio" name="rating" value="3">
+        <input type="radio" name="rating" value="4">
+        <input type="radio" name="rating" value="5">
+
+        <label for="expertise"></label>
+        <select id="expertise" name="expertise">
+          <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Experise</option>
+          <option value="Sometimes Cook">Sometimes Cook</option>
+          <option value="Cook Everyday">Cook Everyday</option>
+          <option value="Cooking is a hobby">Cooking is a hobby</option>
+          <option value="Professional chef">Professional chef</option>
+        </select>
+
+        <label for="review">Review</label>
+        <textarea id="review" name="review" rows="10" cols="30"></textarea>
+
+        <input type="submit" value="Submit Review">
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Original recipe from Mexico I guess!
+      </p>
+    </footer>
+  </body>
+</html>
